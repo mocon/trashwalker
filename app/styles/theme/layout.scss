@@ -1,0 +1,39 @@
+body {
+	background: url('#{$image-path}/paper.jpg') repeat;
+	color: $text-color-1;
+	font-family: $type;
+	font-size: 20px;
+	line-height: 180%;
+	@extend .no-margin;
+}
+
+.container {
+	max-width: 960px;
+	padding: 60px 40px;
+	
+	@media #{$medium}, #{$small} {
+		padding: 40px;
+	}
+}
+
+h1 {
+	font-family: $header;
+	font-size: 200%;
+}
+
+h1, p {
+	@extend .ink;
+	margin-bottom: 30px;
+}
+
+p {
+	display: block;
+}
+
+// Big first letter
+.first::first-letter {
+	font-family: $header;
+	font-size: 300%;
+	float: left;
+	margin: 15px 15px 15px 0;
+}

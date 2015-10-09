@@ -1,0 +1,12 @@
+.no-margin {
+	margin: 0;
+	padding: 0;
+}
+
+// Text with image mask fill
+.ink {
+	color: $text-color-1;
+	background: url('#{$image-path}/ink.jpg') repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

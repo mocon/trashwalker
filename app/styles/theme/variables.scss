@@ -1,0 +1,15 @@
+// Paths
+$image-path: '../images';
+
+// Fonts
+$header: 'Fredericka the Great', cursive;
+$type: 'Special Elite', Courier, monospace;
+
+// Colors
+$text-color-1: #0a381e;
+
+// Breakpoints
+$small:     "(max-width:767px)";
+$medium:    "(min-width:768px) and (max-width:991px)";
+$large:     "(min-width:992px) and (max-width:1199px)";
+$x-large:   "(min-width:1200px)";

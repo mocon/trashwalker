@@ -2,8 +2,8 @@
   "name": "trashwalker",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5"
   },
   "overrides": {
     "bootstrap-sass": {
