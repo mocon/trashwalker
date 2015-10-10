@@ -6,9 +6,20 @@ $type: 'Special Elite', Courier, monospace;
 
 // Colors
 $text-color-1: #0d2719;
+$text-color-2: mix(#167f39, black, 50%);
+$text-color-3: #167f39;
 
 // Breakpoints
 $small:     "(max-width:767px)";
 $medium:    "(min-width:768px) and (max-width:991px)";
 $large:     "(min-width:992px) and (max-width:1199px)";
 $x-large:   "(min-width:1200px)";
+
+// Mixins
+@mixin rotate($degrees) {
+	-moz-transform: rotate($degrees);
+	-webkit-transform: rotate($degrees);
+	-o-transform: rotate($degrees);
+	-ms-transform: rotate($degrees);
+	transform: rotate($degrees);
+}

@@ -3,10 +3,11 @@
 	padding: 0;
 }
 
-// Text with image mask fill
-.ink {
-	color: $text-color-1;
-	background: url('#{$image-path}/ink.jpg') repeat;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.donate {
+	background: white;
+	-webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.25);
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.25);
+	border-radius: 2px;
+  padding: 11px 17px 6px;
+  @include rotate(-2deg);
 }

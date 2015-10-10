@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function() {
-  // Weather
+  // Weather feed
   $.simpleWeather({
     location: 'Venice, CA',
     woeid: '',
@@ -20,23 +20,39 @@ $(document).ready(function() {
     }
   });
   
-  // Twitter
+  // Twitter feed
 	var twitterConfig = {
 	  "id": '652693632583991296',
 	  "domId": 'tweets',
-	  "maxTweets": 5,
-	  "enableLinks": true
+	  "maxTweets": 4,
+	  "enableLinks": true,
+	  "customCallback": handleTweets
 	};
+
+	function handleTweets(tweets) {
+    var x = tweets.length;
+    var n = 0;
+    var element = document.getElementById('tweets');
+    var html = '<ul>';
+    while(n < x) {
+      html += '<li>' + tweets[n] + '</li>';
+      n++;
+    }
+    html += '</ul>';
+    element.innerHTML = html;
+	}
+	
 	twitterFetcher.fetch(twitterConfig);
 	
-	// Instagram
+	// Instagram feed
 	var feed = new Instafeed({
 	    get: 'user',
 	    userId: 2229630812,
 	    accessToken: '2229630812.467ede5.d118a7d36c84488991e3b442d5142297',
 	    clientId: '0c5754c76a9d4980b69045fe77819a35',
-	    template: '<a href="{{link}}"><img src="{{image}}"/><p>{{caption}}</p></a>',
-	    limit: 5
+	    template: '<div class="col-md-6"><a href="{{link}}"><img src="{{image}}"/><p>{{caption}}</p></a></div>',
+	    limit: 10,
+	    resolution: 'standard_resolution'
 	});
 	feed.run();
   setTimeout(function(){$("#instafeed a").attr('target', '_blank');}, 500);

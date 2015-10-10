@@ -1,9 +1,4 @@
 #tweets {
-	ul {
-		@extend .no-margin;
-		list-style: none;
-	}
-	
 	.user {
 		line-height: 28px;
 		
@@ -18,13 +13,8 @@
 			border-radius: 2px;
 		}
 		
-		span:first-child {
-			opacity: 1 !important;
-		}
-		
-		span:last-child {
-			opacity: .6;
-		}
+		span:first-child {opacity: 1 !important;}
+		span:last-child {opacity: .6;}
 	}
 	
 	.tweet {
@@ -48,9 +38,12 @@
 		
 		a {
 			color: white;
-			opacity: .8;
 			text-shadow: 0 2px 0 $text-color-1;
 			margin-right: 10px;
+			
+			&:hover {
+				text-shadow: 0 2px 0 $text-color-3;
+			}
 			
 			&:last-child {
 				margin-right: 0;
