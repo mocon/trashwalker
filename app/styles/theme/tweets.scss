@@ -39,11 +39,12 @@
 		font-size: 24px;
 		
 		a {
-			color: white;
-			text-shadow: 0 2px 0 $text-color-1;
+			color: $text-color-4;
+			text-shadow: 0 2px 0 $text-color-5;
 			margin-right: 10px;
 			
 			&:hover {
+				color: white;
 				text-shadow: 0 2px 0 $text-color-3;
 			}
 			
