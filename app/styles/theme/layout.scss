@@ -48,6 +48,19 @@ ul {
 	list-style: none;
 }
 
+hr {
+	border: none;
+	background: url('#{$image-path}/pencil-line.png') no-repeat top center;
+	height: 10px;
+  background-size: contain;
+  margin: 0 0 30px;
+  
+  @media #{$medium}, #{$small} {
+		max-width: 385px;
+		margin: 0 auto 30px;
+	}
+}
+
 h1 {
 	font-size: 200%;
 	

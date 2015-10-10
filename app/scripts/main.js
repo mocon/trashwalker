@@ -35,7 +35,7 @@ $(document).ready(function() {
     var element = document.getElementById('tweets');
     var html = '<ul>';
     while(n < x) {
-      html += '<li>' + tweets[n] + '</li><div class="clearfix"></div>';
+      html += '<li>' + tweets[n] + '</li><div class="clearfix"></div><hr>';
       n++;
     }
     html += '</ul>';
