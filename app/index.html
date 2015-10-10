@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
-    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -31,12 +32,28 @@
     <![endif]-->
     
     <div class="top-bar"></div>
-    
     <div class="container">
-      <h1>About Trashwalker Venice</h1>
-      <p class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet scelerisque nisl eget tincidunt. Vivamus gravida venenatis blandit. Maecenas tincidunt, tellus vitae volutpat pharetra, nisl ante euismod mi, a aliquam erat nisl ac quam. Nullam orci ex, vestibulum nec sapien ac, varius dictum urna. Suspendisse blandit turpis aliquet elit efficitur, id ullamcorper quam suscipit. Nulla blandit nulla at neque sollicitudin imperdiet. Aenean faucibus sem eget augue ornare varius. Aenean quis purus eget arcu interdum rutrum at quis odio. Phasellus tincidunt tincidunt magna, eu feugiat elit fermentum quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-      <p>Sed venenatis hendrerit urna, sit amet bibendum felis lobortis sed. Quisque aliquet felis et sapien viverra, et fermentum est auctor. Integer nunc dui, mollis nec diam vel, interdum aliquet turpis. Pellentesque mattis risus id sem molestie, vel vestibulum nibh lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit mi sit amet velit blandit vehicula. Phasellus quis nisi eu leo sodales facilisis. Cras laoreet pharetra enim ut iaculis. Phasellus tincidunt urna mollis hendrerit finibus. Sed tempus, sapien eget commodo condimentum, augue turpis cursus nibh, a interdum ante leo eu nisl. Praesent id tortor non diam eleifend rhoncus vitae ut arcu. Aenean sem orci, commodo et ante non, convallis ultrices enim. Nam nec tortor ante. Ut lorem erat, tincidunt non nibh ac, fringilla lobortis purus. Fusce sed blandit mauris. Vivamus convallis nisi eget tellus vehicula, et dignissim felis laoreet.</p>
+			<!-- <div id="weather"></div> -->
     </div>
+    
+    <section>
+	    <div class="container">
+		    <div class="col-md-8">
+			    <h1>About Trashwalker Venice</h1>
+		      <p class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet scelerisque nisl eget tincidunt. Vivamus gravida venenatis blandit. Maecenas tincidunt, tellus vitae volutpat pharetra, nisl ante euismod mi, a aliquam erat nisl ac quam.</p>
+		      <p>Sed venenatis hendrerit urna, sit amet bibendum felis lobortis sed. Quisque aliquet felis et sapien viverra, et fermentum est auctor. Integer nunc dui, mollis nec diam vel, interdum aliquet turpis. Pellentesque mattis risus id sem molestie, vel vestibulum nibh lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		    </div>
+		    <div class="col-md-4">
+			    <h2><i class="fa fa-twitter"></i> Tweets</h2>
+				  <div id="tweets"></div>
+				  
+				  <div class="clearfix"></div>
+				  
+				  <h2><i class="fa fa-instagram"></i> Instagram</h2>
+				  <div id="instafeed"></div>
+		    </div>
+	    </div>
+    </section>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -51,6 +68,9 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/twitter-fetcher/js/twitterFetcher.js"></script>
+    <script src="/bower_components/simpleWeather/jquery.simpleWeather.js"></script>
+    <script src="/bower_components/instafeed.js/instafeed.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

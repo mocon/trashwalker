@@ -1,0 +1,60 @@
+#tweets {
+	ul {
+		@extend .no-margin;
+		list-style: none;
+	}
+	
+	.user {
+		line-height: 28px;
+		
+		a {
+			display: block;
+			color: $text-color-1;
+		}
+		
+		img {
+			float: left;
+			margin-right: 10px;
+			border-radius: 2px;
+		}
+		
+		span:first-child {
+			opacity: 1 !important;
+		}
+		
+		span:last-child {
+			opacity: .6;
+		}
+	}
+	
+	.tweet {
+		margin: 10px 0;
+		float: left;
+	}
+	
+	.timePosted {
+		float: right;
+		font-size: 16px;
+		
+		a {
+			color: $text-color-1;
+			opacity: .6;
+		}
+	}
+	
+	.interact {
+		float: left;
+		font-size: 24px;
+		
+		a {
+			color: white;
+			opacity: .8;
+			text-shadow: 0 2px 0 $text-color-1;
+			margin-right: 10px;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

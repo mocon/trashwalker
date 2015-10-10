@@ -1,0 +1,26 @@
+#instafeed {
+	a {
+		display: inline-block;
+		background: white;
+		padding: 10px;
+		border-radius: 2px;
+		-moz-transform: rotate(2deg);
+		-webkit-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
+		-webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.25);
+		box-shadow: 0 3px 6px 0 rgba(0,0,0,.25);
+	}
+	
+	img {
+		border-top: 1px solid #555;
+    border-left: 1px solid #666;
+	}
+	
+	p {
+		@extend .no-margin;
+		display: block;
+		height: 45px;
+	}
+}

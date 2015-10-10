@@ -1,14 +1,21 @@
 body {
-	background: url('#{$image-path}/paper.jpg') repeat;
+	background: url('#{$image-path}/paper.jpg') repeat top center;
 	color: $text-color-1;
 	font-family: $type;
 	font-size: 20px;
-	line-height: 180%;
+	line-height: 190%;
 	@extend .no-margin;
+	
+	@media #{$medium}, #{$small} {
+		font-size: 16px;
+	}
 }
 
 .container {
 	max-width: 960px;
+}
+
+section {
 	padding: 60px 40px;
 	
 	@media #{$medium}, #{$small} {
@@ -17,12 +24,11 @@ body {
 }
 
 h1 {
-	font-family: $header;
 	font-size: 200%;
 }
 
-h1, p {
-	@extend .ink;
+h1, h2, p {
+	//@extend .ink;
 	margin-bottom: 30px;
 }
 
@@ -32,8 +38,11 @@ p {
 
 // Big first letter
 .first::first-letter {
-	font-family: $header;
-	font-size: 300%;
+	font-size: 250%;
 	float: left;
-	margin: 15px 15px 15px 0;
+	margin: 20px 15px 15px 0;
+	
+	@media #{$medium}, #{$small} {
+		margin: 15px 15px 5px 0;
+	}
 }
