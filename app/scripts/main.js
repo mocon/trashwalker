@@ -35,7 +35,7 @@ $(document).ready(function() {
     var element = document.getElementById('tweets');
     var html = '<ul>';
     while(n < x) {
-      html += '<li>' + tweets[n] + '</li>';
+      html += '<li>' + tweets[n] + '</li><div class="clearfix"></div>';
       n++;
     }
     html += '</ul>';
@@ -50,7 +50,7 @@ $(document).ready(function() {
 	    userId: 2229630812,
 	    accessToken: '2229630812.467ede5.d118a7d36c84488991e3b442d5142297',
 	    clientId: '0c5754c76a9d4980b69045fe77819a35',
-	    template: '<div class="col-md-6"><a href="{{link}}"><img src="{{image}}"/><p>{{caption}}</p></a></div>',
+	    template: '<div class="col-md-6 col-sm-6"><a href="{{link}}"><img src="{{image}}"/><p>{{caption}}</p></a></div>',
 	    limit: 10,
 	    resolution: 'standard_resolution'
 	});

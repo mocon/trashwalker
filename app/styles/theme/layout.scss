@@ -6,6 +6,10 @@ body {
 	line-height: 190%;
 	@extend .no-margin;
 	
+	@media #{$large} {
+		font-size: 18px;
+	}
+	
 	@media #{$medium}, #{$small} {
 		font-size: 16px;
 	}
@@ -25,11 +29,17 @@ a, a:visited {
 	}
 }
 
+.container {
+	@media #{$medium}, #{$small} {
+		padding: 0 40px 40px;
+	}
+}
+
 section {
-	padding: 60px 40px;
+	padding: 60px 0;
 	
 	@media #{$medium}, #{$small} {
-		padding: 40px;
+		padding: 0;
 	}
 }
 
@@ -40,6 +50,17 @@ ul {
 
 h1 {
 	font-size: 200%;
+	
+	@media #{$small} {
+		text-align: center;
+	}
+}
+
+h2 {
+	@media #{$small} {
+		margin-top: 60px;
+		text-align: center;
+	}
 }
 
 h1, h2, p {
@@ -55,7 +76,6 @@ p {
 	float: left;
 	margin: 20px 15px 15px 0;
 	
-	@media #{$medium}, #{$small} {
-		margin: 15px 15px 5px 0;
-	}
+	@media #{$large} {margin: 20px 15px 10px 0;}
+	@media #{$medium}, #{$small} {margin: 15px 15px 5px 0;}
 }
