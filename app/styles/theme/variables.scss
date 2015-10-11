@@ -24,4 +24,5 @@ $x-large:   "(min-width:1200px)";
 	-o-transform: rotate($degrees);
 	-ms-transform: rotate($degrees);
 	transform: rotate($degrees);
+	-webkit-backface-visibility: hidden;
 }
